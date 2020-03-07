@@ -31,24 +31,17 @@ public class Main {
             Statement  st = db.createStatement();
 
             //ResuSet es un objeto tipo tabla
-            ResultSet rs = st.executeQuery(" SELECT * FROM productos ");
+            ResultSet rs = st.executeQuery("SELECT * FROM productos");
 
             //Si no encuentra ningun registro desplegara el mensaje
-            if( rs.wasNull() )
 
-                System.out.println("NADA\n");
-
-            while( rs.next() )
-                System.out.println( rs.getString("NOMBREARTICULO")+" "+rs.getString("CODIGOARTICULO")+" " );
+            while(rs.next())
+                System.out.println(rs.getString("NOMBREARTICULO")+" "+rs.getString("CODIGOARTICULO")+" " );
 
             //Recomendable siempre cerrar los metodos
             rs.close();
-            st.close();
-            db.close();
-
 
         }catch(ClassNotFoundException | SQLException e){
-
 
             System.out.println("Problema de conexion "+e);
         }
