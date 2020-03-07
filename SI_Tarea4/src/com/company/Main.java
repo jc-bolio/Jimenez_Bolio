@@ -36,7 +36,7 @@ public class Main {
             //Si no encuentra ningun registro desplegara el mensaje
 
             while(rs.next())
-                System.out.println(rs.getString("NOMBREARTICULO")+" "+rs.getString("CODIGOARTICULO")+" " );
+                System.out.println(rs.getString("CODIGOARTICULO") + " " + rs.getString("NOMBREARTICULO") + " " + rs.getString("PRECIO") + " " + rs.getString("PAISDEORIGEN") + " ");
 
             //Recomendable siempre cerrar los metodos
             rs.close();
