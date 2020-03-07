@@ -9,7 +9,6 @@ import java.sql.Statement;
 public class Main {
 
     public static void main(String[] args) {
-        // TODO code application logic here
         String host;
         String dbName;
 
@@ -17,7 +16,7 @@ public class Main {
 
             //1.- CARGAR DRIVER
             //Encarga de hacer la conexion a la base de datos por un metodo estatico
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             //DEFINIR URL
             host="jdbc:mysql://localhost:3306/";
@@ -26,7 +25,7 @@ public class Main {
 
             //3.- ESTABLECER CONEXION
             //En caso de tener un usuario y contraseña ponerlo
-            Connection db = DriverManager.getConnection(host + dbName,"root","");
+            Connection db = DriverManager.getConnection(host + dbName,"root","propizzaA12");
 
             //Es la sentencia a ejecutar
             Statement  st = db.createStatement();
@@ -51,7 +50,7 @@ public class Main {
         }catch(ClassNotFoundException | SQLException e){
 
 
-            System.out.println("Problema de conexcion"+e);
+            System.out.println("Problema de conexion "+e);
         }
     }
 }
