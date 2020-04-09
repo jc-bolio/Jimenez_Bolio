@@ -25,7 +25,7 @@ public class Main {
 
             //3.- ESTABLECER CONEXION
             //En caso de tener un usuario y contraseña ponerlo
-            Connection db = DriverManager.getConnection(host + dbName,"root","propizzaA12");
+            Connection db = DriverManager.getConnection(host + dbName,"root","");
 
             //Es la sentencia a ejecutar
             Statement  st = db.createStatement();
