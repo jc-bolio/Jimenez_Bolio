@@ -8,7 +8,7 @@ if (!isset($usuario)){
 
     header("location: login.php");
 }else {
-    $conn = new mysqli('localhost', 'root', '', 'asistencia');
+    $conn = new mysqli('localhost', 'root', 'root', 'asistencia');
     mysqli_set_charset($conn,'utf8'); 
     
     $consulta= $conn->query("select * from usuarios");
@@ -45,6 +45,8 @@ if (!isset($usuario)){
 	<th>Correo</th>        
     <th>Nombre de Usuario</th>
     <th>Contraseña</th>
+    <th>Matricula</th>
+    <th>Grupo</th>
     <th>Nivel Permiso</th>
     </tr>
 </thead>
@@ -61,6 +63,8 @@ if (!isset($usuario)){
             <td><?php echo $row['correo']; ?></td>
             <td><?php echo $row['nombre_usuario']; ?></td>                            
             <td><?php echo $row['password']; ?></td>
+            <td><?php echo $row['matricula']; ?></td>
+            <td><?php echo $row['grupo']; ?></td> 
             <td><?php echo $row['Permisos']; ?></td>
     </tr>
         <?php }

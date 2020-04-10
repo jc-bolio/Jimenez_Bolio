@@ -23,6 +23,8 @@ if($count ==1 ){
     telefono,
     correo,
     nombre_usuario,
+    matricula,
+    grupo,
     password)
         VALUES(
     '$_POST[nombre]',
@@ -30,11 +32,11 @@ if($count ==1 ){
     '$_POST[telefono]',
     '$_POST[correo]',
     '$_POST[nombre_usuario]',
-    '$_POST[password]'        
-
-        
-        
+    '$_POST[password]',
+    '$_POST[matricula]',
+    '$_POST[grupo]'
     )");
+
 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
 echo "<h4>" . "Bienvenido: " . $_POST['nombre'] . "</h4>" . "\n\n";
 echo "<h5>" . "<a href='./login.php'>Iniciar Sesión</a>" . "</h5>";

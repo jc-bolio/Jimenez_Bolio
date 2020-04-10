@@ -78,9 +78,21 @@ session_start();
 <!--Password-->
 <div class="form-group">
 <label for="pass">Password:</label><br>
-<input type="password" name="password" maxlength="8" required>
+<input type="password" name="password" maxlength="4" required>
+<br/><br/>
 </div>
- <br/><br/>
+<!--Matricula-->
+<div class="form-group">
+<label for="matricula">Matricula:</label><br>
+<input type="text" name="matricula" maxlength="255" required>
+<br/><br/>
+</div>
+<!--Grupo-->
+<div class="form-group">
+<label for="grupo">Grupo:</label><br>
+<input type="text" name="grupo" maxlength="255" required>
+</div>
+<br/><br/>
  <input type="submit" name="submit" class="btn btn-primary" value="Registrarme">
  <input type="reset" name="clear" class="btn btn-primary" value="Borrar">
  <button type="button" class="btn" style="background-color:black"> <a href="./login.php" ><font color="white">Login</font></a></button>

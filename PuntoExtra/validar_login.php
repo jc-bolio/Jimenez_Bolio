@@ -3,8 +3,9 @@ session_start();
 require "conexion.php";
 $usuario = $_POST['nombre_usuario'];
 $password = $_POST['password'];
+$matricula = $_POST['matricula'];
 
-$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$usuario' and password = '$password'";
+$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$usuario' and password = '$password' and matricula = '$matricula'";
 $consulta = mysqli_query($conexion,$q);
 
 $array = mysqli_fetch_array($consulta);
