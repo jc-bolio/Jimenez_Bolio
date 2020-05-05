@@ -1,0 +1,54 @@
+/*colores de fondo*/
+.fondoverdeazul{
+    background-color: #1abc9c;
+}
+.fondoverde{
+    background-color: #77dd77;
+}
+.fondorojo{
+    background-color: orangered;
+}
+.fondomorado{
+    background-color: mediumpurple;
+}
+
+/*colores de letra*/
+.letrablanca{
+    color:white;
+}
+.letranegra{
+    color: black;
+}
+
+/*tamaños de letra*/
+.tamañoletra{
+    font-size: 2em;
+}
+
+/*bordes*/
+.bordeverde{
+    border: 3px solid #77dd77; 
+}
+.borderojo{
+    border: 3px solid orangered;
+}
+.bordeblanco{
+    border: 4px solid white;   
+}
+
+
+/*tamaño de recuadro a las orillas*/
+.recuadro{
+    width: 800px;
+    height: 30%;
+}
+
+/*margen*/
+.margen{
+    margin-left:auto; 
+    margin-right:auto;
+    column-gap: 10px;
+    border-spacing: 4px
+}
+
+
