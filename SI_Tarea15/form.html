@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piedra, papel o tijeras</title>
+</head>
+<body>
+    <div align = "center">
+        <form class = "pure-form pure-form-stacked" action ="logic.php">
+            <fieldset>
+                <legend>Piedra, papel o tijeras</legend>
+                <label>Selección jugador 1</label>
+                <select name="P1">
+                    <option value="Piedra">Piedra</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Tijeras">Tijeras</option>
+                </select>
+                <label>Selección jugador 2</label>
+                <select name="P2">
+                    <option value="Piedra">Piedra</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Tijeras">Tijeras</option>
+                </select>
+                <button class="pure-button">Jugar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
